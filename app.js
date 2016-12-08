@@ -51,3 +51,47 @@ console.log(test5);
 console.log(test6);
 
 
+
+console.log("Problem Four - Second Largest");
+
+
+function secondLargest(numbers){
+   
+    let largest = 0;
+    
+    for(let i=0; i<numbers.length; i++){
+       
+        if (numbers[i]>numbers[largest]){
+            largest=i;
+        }
+    }
+    numbers.splice(largest, 1);
+
+largest = 0;
+for(let i=0; i<numbers.length; i++){
+       
+        if (numbers[i]>numbers[largest]){
+            largest=i;
+        }
+    }
+
+    return numbers[largest];
+}
+
+let test7 = secondLargest([25, 30, 10, 70, 40, 60]);
+
+console.log(test7);
+
+
+
+
+console.log("Problem Five - Contains Vowel");
+
+function containsVowel(word){
+
+    let vowel = ["a", "e", "i", "o", "u"];
+
+    for(let i=0; i<word.length; i++){
+        
+    }
+}
