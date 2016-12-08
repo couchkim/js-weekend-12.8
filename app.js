@@ -31,3 +31,23 @@ console.log(test3);
 
 
 
+console.log("Problem Three - Greater Than");
+
+
+function greaterThan(num1, num2){
+    if(num2 > num1){
+        return "True";
+    }else{
+        return "False";
+    }
+    }
+
+let test4=greaterThan(25, 20);
+let test5=greaterThan(20, 25);
+let test6=greaterThan(100, 100);
+
+console.log(test4);
+console.log(test5);
+console.log(test6);
+
+
