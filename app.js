@@ -113,24 +113,24 @@ console.log("Problem Six - Pig Latin");
 // Display the remaining letters of each word followed by the first letter and the letters "ay"
 
 
-function pigLatin(phrase){
+// function pigLatin(phrase){
 
-    let words=phrase.split();
+//     let words=phrase.split();
     
-    for (let i=0; i<words.length; i++){
+//     for (let i=0; i<words.length; i++){
         
-        let letters=words.split();
+//         let letters=words.split();
 
-    for (let i=0; i<letters.length; i++){    
-        letters.splice(letters[0], 1);
-    }
-    }
-    return letters + "" + "ay";
-    }
+//     for (let i=0; i<letters.length; i++){    
+//         letters.splice(letters[0], 1);
+//     }
+//     }
+//     return letters + "" + "ay";
+//     }
 
 
-let test20= pigLatin("coding rocks");
-console.log(test20);
+// let test20= pigLatin("coding rocks");
+// console.log(test20);
 
 
 
@@ -146,12 +146,12 @@ console.log("Problem Seven - Longest Word");
 // 5. Need to split the string into individual words and then split those words into letters.  
 // Then you can count them.  Two loops?
 
-function longestWord(string){
+// function longestWord(string){
 
 
 
 
-}
+// }
 
 
 
@@ -162,11 +162,11 @@ console.log("Problem Eight - Divisors");
 // Use modular function to determine the remainder.
 // Print the array of the numbers that work.
 
-function divisors(number){
+// function divisors(number){
 
 
 
-}
+// }
 
 
 
@@ -180,10 +180,10 @@ console.log("Problem Nine - Weave");
 // Display the new string with the replaced characters.
 
 
-function weave(phrase, number){
+// function weave(phrase, number){
 
 
-}
+// }
 
 console.log("Problem Ten - Bonus");
 
@@ -200,6 +200,11 @@ function bonus(meal){
 
 }
 
+
+let test99=bonus(12.99);
+console.log(test99);
+
+
 console.log("Problem Eleven - Pokemon");
 
 // Add the first number of the array [0] to the beginning value of 0
@@ -209,16 +214,16 @@ console.log("Problem Eleven - Pokemon");
 // Continue until you get to the end of the original array.
 // Display the new array.
 
-function pokemon(numbers){
+// function pokemon(numbers){
 
-for(let i=0; i<numbers.length; i++){
-    let numbers[i] = newNumber[i];
-    newNumber[i+1] = numbers[i] + numbers[i+1];
-}
-    return(newNumber);
+// for(let i=0; i<numbers.length; i++){
+//     let numbers[i] = newNumber[i];
+//     newNumber[i+1] = numbers[i] + numbers[i+1];
+// }
+//     return(newNumber);
 
-}
+// }
 
-let test50 = pokemon([5, 10, 2, 6, 8]);
+// let test50 = pokemon([5, 10, 2, 6, 8]);
 
-console.log(newNumber);
+// console.log(newNumber);
