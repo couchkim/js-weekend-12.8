@@ -85,7 +85,11 @@ console.log(test7);
 
 
 
-// console.log("Problem Five - Contains Vowel");
+console.log("Problem Five - Contains Vowel");
+
+// For each letter in the string, look for each vowel, one at a time.
+// If one vowel is found, you can stop looking and display true.
+// If no vowels are found after looping through all vowels and all letters, display false.
 // Return true if one vowel in string and false if not
 
 
@@ -103,6 +107,11 @@ console.log(test7);
 // }
 
 console.log("Problem Six - Pig Latin");
+
+// Separate the phrase into individual words
+// Remove the first letter from each word.
+// Display the remaining letters of each word followed by the first letter and the letters "ay"
+
 
 function pigLatin(phrase){
 
@@ -148,7 +157,10 @@ function longestWord(string){
 
 console.log("Problem Eight - Divisors");
 
-// Input number and it returns an array of all numbers that divide into it evenly
+// Input number and it returns an array of all numbers that divide into it evenly.
+// Figure out all of the numbers equal to or less than the input number that have a remainder of 0.
+// Use modular function to determine the remainder.
+// Print the array of the numbers that work.
 
 function divisors(number){
 
@@ -162,7 +174,10 @@ function divisors(number){
 
 console.log("Problem Nine - Weave");
 
-// Accepts input string and number.  Replaces every xth character replaced with an x
+// Accepts input string and number.  Replaces every xth character replaced with an x.
+// Count the letters in the string.  When you get to the xth character, replace it with an x.
+// Restart the count and repeat
+// Display the new string with the replaced characters.
 
 
 function weave(phrase, number){
@@ -172,13 +187,38 @@ function weave(phrase, number){
 
 console.log("Problem Ten - Bonus");
 
-// Input cost of meal, returns the tip and rounds up to nearest dollar.  20% tip.  Math.ceil
+// Input cost of meal, returns the tip and rounds up to nearest dollar.  20% tip.  
+// Use Math.ceil
+// Multiply the cost of the meal times the 20% tip and save the product.
+// Round the product to the nearest dollar using Math.ceil
+// Display the full amount paid?  or just the tip is rounded up?
 
 
 function bonus(meal){
-
-
+    let tip = Math.ceil(meal * .2);
+    return meal + " + " + tip + " = " + (meal+tip);
 
 }
 
+console.log("Problem Eleven - Pokemon");
 
+// Add the first number of the array [0] to the beginning value of 0
+// Return that value as the first number in the array [0]
+// Add that number to the 2nd number in the original array [1]
+// Return that value in the second position [1] of the new array
+// Continue until you get to the end of the original array.
+// Display the new array.
+
+function pokemon(numbers){
+
+for(let i=0; i<numbers.length; i++){
+    let numbers[i] = newNumber[i];
+    newNumber[i+1] = numbers[i] + numbers[i+1];
+}
+    return(newNumber);
+
+}
+
+let test50 = pokemon([5, 10, 2, 6, 8]);
+
+console.log(newNumber);
