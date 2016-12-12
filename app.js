@@ -93,18 +93,23 @@ console.log("Problem Five - Contains Vowel");
 // Return true if one vowel in string and false if not
 
 
-// function containsVowel(word){
+function containsVowel(words){
 
-//     let vowel = ["a", "e", "i", "o", "u"];
+    let vowels = ["a", "e", "i", "o", "u"];
 
-//     for(let i=0; i<word.length; i++){
+    for(let i=0; i<words.length; i++){
+        for(let j=0; j<vowels.length; j++){
+            if(vowels[j]===words[i]){
+                return true;
+            }
+        }     
+   }
+   return false;
+}
 
-//         for(let i=o; i<vowel.length; i++){
-//             vowel[i]
-//         }
+let test30 = containsVowel("bgthj");
+console.log(test30);
 
-//     }
-// }
 
 console.log("Problem Six - Pig Latin");
 
@@ -113,24 +118,24 @@ console.log("Problem Six - Pig Latin");
 // Display the remaining letters of each word followed by the first letter and the letters "ay"
 
 
-// function pigLatin(phrase){
+function pigLatin(phrase){
 
-//     let words=phrase.split();
+    let words=phrase.split();
     
-//     for (let i=0; i<words.length; i++){
+    for (let i=0; i<words.length; i++){
         
-//         let letters=words.split();
+        let letters=words.split();
 
-//     for (let i=0; i<letters.length; i++){    
-//         letters.splice(letters[0], 1);
-//     }
-//     }
-//     return letters + "" + "ay";
-//     }
+    for (let i=0; i<letters.length; i++){    
+        letters.splice(letters[0], 1);
+    }
+    }
+    return letters + "" + "ay";
+    }
 
 
-// let test20= pigLatin("coding rocks");
-// console.log(test20);
+let test20= pigLatin("coding rocks");
+console.log(test20);
 
 
 
