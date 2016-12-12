@@ -195,13 +195,14 @@ console.log("Problem Ten - Bonus");
 
 
 function bonus(meal){
-    let tip = Math.ceil(meal * .2);
-    return meal + " + " + tip + " = " + (meal+tip);
+    let cost = Math.ceil(meal * 1.2);
+    let tip = meal * .2;
+    return meal + " + " + tip + " = " + (cost);
 
 }
 
 
-let test99=bonus(12.99);
+let test99=bonus(14.99);
 console.log(test99);
 
 
