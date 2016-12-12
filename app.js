@@ -85,13 +85,100 @@ console.log(test7);
 
 
 
-console.log("Problem Five - Contains Vowel");
+// console.log("Problem Five - Contains Vowel");
+// Return true if one vowel in string and false if not
 
-function containsVowel(word){
 
-    let vowel = ["a", "e", "i", "o", "u"];
+// function containsVowel(word){
 
-    for(let i=0; i<word.length; i++){
+//     let vowel = ["a", "e", "i", "o", "u"];
+
+//     for(let i=0; i<word.length; i++){
+
+//         for(let i=o; i<vowel.length; i++){
+//             vowel[i]
+//         }
+
+//     }
+// }
+
+console.log("Problem Six - Pig Latin");
+
+function pigLatin(phrase){
+
+    let words=phrase.split();
+    
+    for (let i=0; i<words.length; i++){
         
+        let letters=words.split();
+
+    for (let i=0; i<letters.length; i++){    
+        letters.splice(letters[0], 1);
     }
+    }
+    return letters + "" + "ay";
+    }
+
+
+let test20= pigLatin("coding rocks");
+console.log(test20);
+
+
+
+
+
+console.log("Problem Seven - Longest Word");
+
+// Take single string and return the longest word in the string
+// 1. Look at the first word in the string and count its letters
+// 2. Compare the number of letters in the first word to the next word
+// 3. Keep the word that has numbers greater than the previous longest word.
+// 4. Display the longest word.and
+// 5. Need to split the string into individual words and then split those words into letters.  
+// Then you can count them.  Two loops?
+
+function longestWord(string){
+
+
+
+
 }
+
+
+
+console.log("Problem Eight - Divisors");
+
+// Input number and it returns an array of all numbers that divide into it evenly
+
+function divisors(number){
+
+
+
+}
+
+
+
+
+
+console.log("Problem Nine - Weave");
+
+// Accepts input string and number.  Replaces every xth character replaced with an x
+
+
+function weave(phrase, number){
+
+
+}
+
+console.log("Problem Ten - Bonus");
+
+// Input cost of meal, returns the tip and rounds up to nearest dollar.  20% tip.  Math.ceil
+
+
+function bonus(meal){
+
+
+
+}
+
+
